@@ -84,13 +84,13 @@ textarea:focus {
 }
 
 .topWrap {
-    background: url(../Images/New-York-Cityscape.png) center;
+    background: url(res/shanghai.jpg) center;
     background-size: cover;
     height: 100vh;
 }
 
 #topLanding {
-    background: rgba(255, 24, 24, 0.73);
+    background: rgba(255, 24, 24, 0.5);
     height: 100vh;
     width: 100%;
 }
@@ -487,6 +487,8 @@ a {
     float: left;
     position: relative;
     padding: 0 15px;
+    border: 1px solid #bababa;
+    border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 15px;
 }

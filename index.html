@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><title>Charles Wang</title></head>
+<head>
+
+<title>Charles Wang</title>
+
+</head>
 
 <!--
 <link href="mainstyle.css" rel="stylesheet" />
@@ -8,7 +12,6 @@
 <link href="cgb.css" rel="stylesheet" type="text/css">
 
 <body>
-
 
 <table border="0" width="700" height="100">
 <tbody>
@@ -68,8 +71,46 @@
 
 </td>
 </tr>
+
+
+<tr>
+<td>
+<!-- MAIL SECTION -->
+<p><strong>Contact</strong></p>
+<form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
+
+<input type="text" placeholder="First" name="First name" />
+<input type="text" placeholder="Last" name="Last name" />
+<br><br>
+<input type="text" placeholder="Email" name="from" />
+<br><br>
+<input type="text" placeholder="Subject" name="subject" />
+<br><br>
+<input name=ccme type=checkbox checked> Send me a copy of this message<p>
+<textarea placeholder="Message" name="body" rows="10" cols="100"></textarea>
+<input type="submit" value="SEND" />
+
+<script>
+$('#sendButton').mousedown(function () {
+$(this).css({ "margin-top": '4px', 'borderWidth': '0px' ,height:'51px'});
+});
+$('#sendButton').mouseup(function () {
+$(this).css({ "margin-top": '0px', 'borderWidth': '4px', height: '54px' });
+});
+$('#sendButton').mouseleave(function () {
+$(this).css({ "margin-top": '0px', 'borderWidth': '4px', height: '54px' });
+});
+</script>
+
+</form>
+
+</td>
+</tr>
+
 </tbody>
 </table>
+
+<br>
 
 </body>
 </html>
