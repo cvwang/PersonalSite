@@ -92,21 +92,9 @@
 <input type="text" placeholder="Subject" name="subject" />
 <br><br>
 <input name=ccme type=checkbox checked> Send me a copy of this message<p>
-<textarea placeholder="Message" name="body" rows="10" cols="100"></textarea>
+<textarea placeholder="Message" name="body" rows="10" cols="90"></textarea>
 <br>
 <input type="submit" value="SEND" />
-
-<script>
-$('#sendButton').mousedown(function () {
-$(this).css({ "margin-top": '4px', 'borderWidth': '0px' ,height:'51px'});
-});
-$('#sendButton').mouseup(function () {
-$(this).css({ "margin-top": '0px', 'borderWidth': '4px', height: '54px' });
-});
-$('#sendButton').mouseleave(function () {
-$(this).css({ "margin-top": '0px', 'borderWidth': '4px', height: '54px' });
-});
-</script>
 
 </form>
 
