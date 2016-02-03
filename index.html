@@ -1,118 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<link rel="icon" href="res/icon.ico">
-<title>Charles Wang</title>
+    <link rel="icon" href="res/icon.ico">
+    <title>Charles Wang</title>
+    <link href="cgb.css" rel="stylesheet" type="text/css">
 
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
 
-<!--
-<link href="mainstyle.css" rel="stylesheet" />
--->
-<link href="cgb.css" rel="stylesheet" type="text/css">
+  <body>
 
-<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Welcome!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#projects">Projects & Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-<table border="0" width="700" height="100">
-<tbody>
-<tr>
-<td width="141">
-<div style="height: 250px"><img src="res/pro_pic.JPG" style="height:100%"></div>
-</td>
-<td width="300">
-<p><font size="7">Charles Wang</font></p>
-<p>Undergraduate Computer Science Engineering Student<br>
-<a href="http://www.cse.umich.edu/">Computer Science Engineering</a><br>
-<a href="http://www.engin.umich.edu/">College of Engineering</a><br>
-<a href="http://www.umich.edu/">University of Michigan</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+    <div class="container" id="nav-container">
+      <!-- <div class="shift-down"> -->
+      <table border="0" width="700" height="100">
+        <tbody>
+          <tr>
+            <td>
+              <div style="height: 250px"><img src="res/pro_pic.JPG" style="height:100%"></div>
+            </td>
+            <td>
+              <p><font size="7">Charles Wang</font></p>
+              <p>Undergraduate Computer Science Engineering Student<br>
+                <a href="http://www.cse.umich.edu/">Computer Science Engineering</a><br>
+                <a href="http://www.engin.umich.edu/">College of Engineering</a><br>
+                <a href="http://www.umich.edu/">University of Michigan</a>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a name="projects"></a> 
+      <p><a href="https://github.com/cvwang/">Github</a></p>
+      <p><a href="https://www.linkedin.com/in/cvwang">LinkedIn</a></p>
+      <p><a href="res/resume.pdf">Resume</a></p>
+      <p><strong>UROP Research</strong></p>
+      <ul>
+        <li>
+          Designed <a href="https://github.com/cvwang/SeqUMich">software</a> that indexes thousands of cancer patients' genomes to quickly determine if a given DNA mutation sequence is contained throughout the genome database.
+          <ul>
+            <li><a href="https://drive.google.com/file/d/0B2Oq1o2MAfu_eEY1dFN3S1JjQms/edit">Research poster link</a>
+          </ul>
+      </ul>
+      <p><strong>Projects</strong></p>
+      <ul>
+        <li> Twerating - Implemented Machine Learning techniques to tackle the sentiment analysis problem. Our team developed a movie rating system that pools and processes Twitter tweets to provide a truly accurate and unbiased movie rating. <a href="res/ml_paper.pdf">Paper</a> and <a href="res/ml_poster.pdf">poster</a>.</li>
+        <li>Tech Team Director at <a href="https://mpowered.umich.edu/">MPowered Entrepreneurship</a> - Overseeing development of our organization's first <a href="https://play.google.com/store/apps/details?id=edu.umich.mpowered.mpowered">Android</a> and <a href="https://itunes.apple.com/us/app/mpowered-entrepreneurship/id1039674962">iOS</a> apps.</li>
+        <li>Built an <a href="cube.html">8x8x8 LED Cube</a> and programmed an FPGA board in assembly to graph two-variable functions (team of four).</li>
+        <li>Built an <a href="http://www.youtube.com/watch?v=CIx559oaiVE">automated vinyl record cleaner</a> for my senior project (team of two).</li>
+        <li>For my Stanford summer engineering design course, I built a <a href="http://www.youtube.com/watch?v=28SGvFchyhs">portable MP3 player</a> (individual).</li>
+      </ul>
+      <p><strong>Hobbies & other things</strong></p>
+      <ul>
+        <li>
+          Short videos for film class during high school:
+          <ul>
+            <li><a href="http://youtu.be/OxECBpSXmow">Winner</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <a name="contact"></a> 
+      <!-- MAIL SECTION -->
+      <p><strong>Contact</strong></p>
+      <form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
+        <input type="text" placeholder="First" name="First name" />
+        <input type="text" placeholder="Last" name="Last name" />
+        <br><br>
+        <input type="text" placeholder="Email" name="from" />
+        <br><br>
+        <input type="text" placeholder="Subject" name="subject" />
+        <br><br>
+        <input name=ccme type=checkbox checked> Send me a copy of this message
+        <p>
+          <textarea placeholder="Message" name="body" rows="10" cols="90"></textarea>
+          <br>
+          <input type="submit" value="SEND" />
+        </p>
+      </form>
+      </li>
+    </div><!-- /.container -->
 
-<!-- <hr> -->
-
-<table border="0" width="700">
-<tbody>
-<tr>
-<td width="690">
-
-<p><a href="https://github.com/cvwang/">Github</a></p>
-<p><a href="https://www.linkedin.com/in/cvwang">LinkedIn</a></p>
-<p><a href="res/resume.pdf">Resume</a></p>
-
-<p><strong>UROP Research</strong></p>
-<ul>
-<li>Designed <a href="https://github.com/cvwang/SeqUMich">software</a> that indexes thousands of cancer patients' genomes to quickly determine if a given DNA mutation sequence is contained throughout the genome database.
-<ul>
-<!--
-<li><a href="https://github.com/cvwang/SeqUMich">Software source code</a>
--->
-<li><a href="https://drive.google.com/file/d/0B2Oq1o2MAfu_eEY1dFN3S1JjQms/edit">Research poster link</a>
-<!--
-<li><a href="res/urop_poster.pdf">Research poster link</a>
--->
-</ul>
-</ul>
-
-<p><strong>Projects</strong></p>
-<ul>
-<li> Twerating - Implemented Machine Learning techniques to tackle the sentiment analysis problem. Our team developed a movie rating system that pools and processes Twitter tweets to provide a truly accurate and unbiased movie rating. <a href="res/ml_paper.pdf">Paper</a> and <a href="res/ml_poster.pdf">poster</a>.
-<li>Tech Team Director at <a href="https://mpowered.umich.edu/">MPowered Entrepreneurship</a> - Overseeing development of our organization's first <a href="https://play.google.com/store/apps/details?id=edu.umich.mpowered.mpowered">Android</a> and <a href="https://itunes.apple.com/us/app/mpowered-entrepreneurship/id1039674962">iOS</a> apps.</li>
-<li>Built an <a href="cube.html">8x8x8 LED Cube</a> and programmed an FPGA board in assembly to graph two-variable functions (team of four).
-<li>Built an <a href="http://www.youtube.com/watch?v=CIx559oaiVE">automated vinyl record cleaner</a> for my senior project (team of two).
-<li>For my Stanford summer engineering design course, I built a <a href="http://www.youtube.com/watch?v=28SGvFchyhs">portable MP3 player</a> (individual).
-</ul>
-
-<p><strong>Hobbies & other things</strong></p>
-<ul>
-<li>Short videos for film class during high school:
-<ul>
-<li><a href="http://youtu.be/OxECBpSXmow">Winner</a>
-</ul>
-</ul>
-
-</td>
-</tr>
-
-</tbody>
-</table>
-
-<!-- <a href="personal_website2/index.html">New Website (In Prod.)</a> -->
-
-<hr>
-
-<table border="0" width="700">
-<tbody>
-
-<tr>
-<td>
-<!-- MAIL SECTION -->
-<p><strong>Contact</strong></p>
-<form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
-
-<input type="text" placeholder="First" name="First name" />
-<input type="text" placeholder="Last" name="Last name" />
-<br><br>
-<input type="text" placeholder="Email" name="from" />
-<br><br>
-<input type="text" placeholder="Subject" name="subject" />
-<br><br>
-<input name=ccme type=checkbox checked> Send me a copy of this message<p>
-<textarea placeholder="Message" name="body" rows="10" cols="90"></textarea>
-<br>
-<input type="submit" value="SEND" />
-
-</form>
-
-</td>
-</tr>
-
-</tbody>
-</table>
-
-<br>
-
-</body>
+  </body>
 </html>
